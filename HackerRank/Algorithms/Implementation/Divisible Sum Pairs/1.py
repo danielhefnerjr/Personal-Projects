@@ -1,0 +1,15 @@
+#!/bin/python3
+
+import sys
+
+
+n,k = input().strip().split(' ')
+n,k = [int(n),int(k)]
+a = [int(a_temp) for a_temp in input().strip().split(' ')]
+
+count = 0
+for j in range(0,n):
+    for i in range(0,j):
+        count += (a[i]+a[j]) % k == 0
+        
+print(count)

@@ -1,0 +1,30 @@
+-balancing bst
+-linked list
+trie
+-stack
+-queue
+vector/arraylist structure
+hash table
+btree
+string buffer
+
+-breadth first search
+-depth first search
+graph breadth first search
+graph depth first search
+-binary search
+-merge sort
+quick sort
+-tree insert/find/etc
+
+gradient descent (regression/classification?)
+mnist nn
+	-theano
+	-tensorflow
+cnn
+sift
+svm
+
+redo RL project
+	-C++
+	-Rust
