@@ -10,11 +10,24 @@ def placequeens(row, placed):
         
     return False
 
+def placequeensall(row, placed):
+    if row > 8:
+        print(placed)
+        return 1
+
+    s = 0
+    for col in range(1,9):
+        if isvalid(row,col,placed):
+            s += placequeensall(row+1,placed + ((row,col),))
+
+    return s
+
 def isvalid(row,col,placed):
     for q in placed:
         if q[0] == row or q[1] == col or q[1]-q[0] == col-row or (9-q[1])-q[0] == (9-col)-row:
             return False
         
     return True
-    
+
 placequeens(1,())
+print(placequeensall(1,()))
